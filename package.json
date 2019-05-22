@@ -1,0 +1,21 @@
+{
+  "name": "serversidepagination",
+  "version": "1.0.0",
+  "description": "serverside pagination using mongoja-paginate \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[s\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Serverside pagination using mongojs-paginate "
+  },
+  "author": "Rutuja",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "mongojs": "^2.6.0",
+    "mongojs-paginate": "^1.2.0"
+  }
+}

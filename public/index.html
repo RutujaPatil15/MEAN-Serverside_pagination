@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>pagination</title>
+  </head>
+<body  ng-app="Myapp" ng-controller="myCtrl">
+
+    <div style="padding:3%;"> 
+        <h1 style="text-align:center;">Server side pagination,searching </h1><br>
+        <table ng-table="tableParams" class="table table-bordered table-striped table-condensed" show-filter="true">
+            <tr ng-repeat = "userdata in $data">
+            <td title="'Sr.No'">{{$index + 1}}</td>
+            <td title="'Full Name'" filter="{ full_name: 'text'}"><div style="width:160px;">{{userdata.full_name}}</div>  </td>
+            <td title="'Email'">{{userdata.email}}</td>
+            <td title="'Gender'">{{userdata.gender}}</td>
+            <td title="'DOB'">{{userdata.date_of_birth}}</td>
+            <td title="'Phone No.'">{{userdata.phone_number}}</td>
+            </tr>
+        </table>
+    </div>
+
+<script src="lib/angular/angular.js"></script>
+
+<script src="lib/ng-table/bundles/ng-table.min.js"></script>
+<script src="lib/angular-resource/angular-resource.js"></script>
+<script src="app.js"></script>
+</body>
